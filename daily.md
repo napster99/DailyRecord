@@ -159,15 +159,9 @@ Firefox 可以在 about:cache 中查看。
 这些特定还是实验性质的，将来可能改变。
 
 权利越大，责任越大，不要滥用！
+
 参考链接
-
-
-
 [html5-prefetch](https://medium.com/@luisvieira_gmr/html5-prefetch-1e54f6dda15d/)
 [MDN Controlling DNS prefetching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching/)
 [MDN Link prefetching FAQ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ/)
 
-
-###why ? 
-
-###how ?
