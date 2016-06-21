@@ -59,11 +59,11 @@ watch, unwatch, watchers, repl, restart, kill, list, scripts, breakOnException, 
 Debugger listening on port 5858
 ```
 可以访问下 http://localhost:5858，会看到：
->Type: connect
->V8-Version:3.28.71.19
->Protocol-Version:1
->Embedding-Host:node v0.12.7
->Content-Length:0
+>Type: connect  
+>V8-Version:3.28.71.19   
+>Protocol-Version:1  
+>Embedding-Host:node v0.12.7  
+>Content-Length:0  
 
 它告诉我们 nodejs 在打开文件的时候启动了内建调试功能，并且监听端口 5858 过来的调试命令。除了在命令行中直接调试之外，我们还可以通过另外两种方式去调试这个代码：
 
