@@ -435,6 +435,7 @@ next();
 异常处理
 当请求出错时，superagent首先会检查回调函数的参数数量，当 err 参数提供的话，参数就是两个，如下
 
+
 ```
 request
 .post('/upload')
@@ -458,14 +459,14 @@ request
 
 注意：superagent 不认为 返回 4xx 和 5xx 的情况是错误。比如当请求返回500或者403之类的状态码时，可以通过 res.error 或者 res.status 等属性来查看。此时并不会有错误对象传递到回调函数中。当发生网络错误或者解析错误时，superagent才会认为是发生了请求错误，此时会传递一个错误对象 err 作为回调函数的第一个参数。
 当产生一个4xx或者5xx的http响应， res.error 提供了一个错误信息的对象，你可以通过检查这个来做某些事情。
-
+  
+  
 ```
 if (err && err.status === 404) {
 alert('oh no ' + res.body.message);
 } else if (err) {
 // all other error types we handle generically
 }
-
 ```
 
 
