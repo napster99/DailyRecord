@@ -326,16 +326,21 @@ nodejs客户端目前提供两种基本授权的方式。
 
 一种是通过类似下面这样的url，
 ```request.get('http://tobi:learnboost@local').end(callback);```
+
 意思就是说要求在url中指明 user:password 。
 第二种方式就是通过 auth() 方法。
+
 ```
 request
 .get('http://local')
 .auth('tobi', 'learnboost')
 .end(callback);
 ```
+
 跟随重定向
-默认是向上跟随5个重定向，不过可以通过调用 res.redirects(n) 来设置个数，
+默认是向上跟随5个重定向，不过可以通过调用 res.redirects(n) 来设置个数
+
+
 ```
 request
 .get('/some.png')
@@ -343,7 +348,9 @@ request
 .end(callback);
 ```
 管道数据
-nodejs客户端允许使用一个请求流来输送数据。比如请求一个文件作为输出流，
+nodejs客户端允许使用一个请求流来输送数据。比如请求一个文件作为输出流
+
+
 ```
 var request = require('superagent');
 var fs = require('fs');
@@ -378,7 +385,10 @@ req.part()
 .write('tobi');
 req.end(callback);
 ```
+
 附加文件 上面提及的高级api方法，可以通用 attach(name, [path], [filename]) 和 field(name, value) 这两种形式来调用。添加多个附件也比较简单，只需要给附件提供自定义的文件名称，同样的基础名称也要提供。
+
+
 ```
  request
 .post('/upload')
@@ -387,8 +397,11 @@ req.end(callback);
 .attach('file', 'path/to/jane.png')
 .end(callback);
 ```
+
 字段值
 跟html的字段很像，你可以调用 field(name, value) 方法来设置字段。假设你想上传一个图片的时候带上自己的名称和邮箱，那么你可以像下面写的那样，
+
+
 ```
 request
 .post('/upload')
@@ -397,6 +410,7 @@ request
 .attach('image', 'path/to/tobi.png')
 .end(callback);
 ```
+
 压缩
 nodejs客户端本身对响应体就做了压缩，而且做的很好。所以这块你不需要做额外的事情了。
 缓冲响应
@@ -405,6 +419,8 @@ nodejs客户端本身对响应体就做了压缩，而且做的很好。所以�
 一旦设置了缓冲标识 res.buffered ，那么就可以在一个回调函数里处理缓冲和没缓冲的响应。
 跨域资源共享
 withCredentials() 方法可以激活发送原始cookie的能力。不过只有在 Access-Control-Allow-Origin 不是一个通配符( )，并且 *Access-Control-Allow-Credentials 为 true 的情况下才可以。
+
+
 ```
 request
 .get('http://localhost:4001/')
@@ -426,7 +442,10 @@ request
 .end(function(err, res){
 });
 ```
+
 如果没有回调函数，或者回调函数只有一个参数的话，可以添加error事件的处理。
+
+
 ```
 request
 .post('/upload')
@@ -436,8 +455,10 @@ request
 
 });
 ```
+
 注意：superagent 不认为 返回 4xx 和 5xx 的情况是错误。比如当请求返回500或者403之类的状态码时，可以通过 res.error 或者 res.status 等属性来查看。此时并不会有错误对象传递到回调函数中。当发生网络错误或者解析错误时，superagent才会认为是发生了请求错误，此时会传递一个错误对象 err 作为回调函数的第一个参数。
 当产生一个4xx或者5xx的http响应， res.error 提供了一个错误信息的对象，你可以通过检查这个来做某些事情。
+
 ```
 if (err && err.status === 404) {
 alert('oh no ' + res.body.message);
