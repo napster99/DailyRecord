@@ -1,4 +1,3 @@
-```
 <html>
 
   <head>  
@@ -33,3 +32,29 @@
   A.js b.css c.html
   t.txt  s.doc  e.excel 
 5、网页的骨骼结构标签有哪些？  
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>  
+  <ol  type="a">
+     <li>苹果</li>
+     <li>香蕉</li>   
+     <li>梨子</li> 
+     <li>葡萄</li>
+     <li>桃子</li>
+
+     </ol>
+
+
+
+
+
+</body>
+</html>
