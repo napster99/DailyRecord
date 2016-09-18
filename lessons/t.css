@@ -1,0 +1,17 @@
+table tr td,
+th {
+  border: 1px solid #000;
+}
+
+table{
+  color: red;
+}
+
+.mytable{
+  border-collapse:collapse;
+  color: orange;
+}
+
+#id1{
+  color: blue;
+}
