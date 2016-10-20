@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>绝对定位、相对定位、浮动相关知识</title>
+	<style type="text/css">
+		
+	.win1{
+		background: blue;
+		width: 200px;
+		height: 200px;
+	}
+
+	.win2{
+		position: absolute;
+		top: 50px;
+		left: 80px;
+		/*bottom: 10px;*/
+		/*right: 10px;*/
+		z-index: 4;
+		background: red;
+		width: 200px;
+		height: 200px;
+	}
+	.win3{
+		position: absolute;
+		top: 20px;
+		left: 10px;
+		/*bottom: 10px;*/
+		/*right: 10px;*/
+		z-index: 3;
+		background: green;
+		width: 200px;
+		height: 200px;
+	}
+
+	.win4{
+		position: relative;
+
+		background: gray;
+		width: 200px;
+		height: 200px;
+	}
+
+	.win5{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		background: black;
+	}
+	</style>
+</head>
+
+<body>
+
+<p> position:static   网页本身的布局定位</p>
+<p> position:absolute;  绝对定位</p>
+<p> position:relative;  相对定位</p>
+<p> postion:fixed;      固定定位</p>
+
+z-index:1~9999
+
+
+<div class="win1"></div>
+<div class="win2"></div>
+<div class="win3"></div>
+
+<div class="win4">
+	<div>sfdas</div>
+	<div class="win5"></div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<p>二、浮动层</p>
+<span style="float:left;">左浮动</span>
+<span style="float:right;">右浮动</span>
+<!-- <span style="background:red;">span</span> -->
+<div style="background:red;">div</div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		
+	.biankuang{
+		border: 1px solid gray;
+		padding: 7px;
+		background: #eee;
+		margin-top: 20px;
+	}
+
+	p{
+		color: #1f2426;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.status{
+		color: #B22222;
+	}
+	.wrap{
+		width: 400px;
+		background: tan;
+		padding: 5px;
+	}
+
+	a{
+		text-decoration: none;
+		color: #4d555d;
+		font-weight: bold;
+		font-size: 16px;
+		font-family: 'Microsoft Yahei';
+		margin-right: 30px;
+	}
+	a:hover{
+		color: #00b43c;
+	}
+	a.active{
+		color: #00b43c;
+	}
+	.line{
+		margin-top: 20px;
+	}
+	#ss{
+		color: red;
+	}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<h3 id="ss" class="active">伪类选择符</h3>
+		<hr>
+		<p>更有趣的是伪类选择符，为什么叫做伪类选择符，它允许给html不存在的标签（标签的某种状态）设置样式，比如说我们给html中一个标签元素的<span class="status">鼠标滑过的状态</span>来设置字体颜色</p>
+		<div class="biankuang">
+			<span>a:hover{color:red;}</span>
+		</div>
+	</div>
+	<br />
+	<br />
+	<br />
+	<a class="active" href="javascript:;">评论</a>
+	<a href="javascript:;">问答</a>
+	<a href="javascript:;">笔记</a>
+	<a href="javascript:;">同学代码</a>
+	<hr class="line" />
+</body>
+</html>

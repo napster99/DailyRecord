@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" /> 
+	<title>a标签target的区别</title>
+
+	<style type="text/css">
+		
+		/*a{color: red;}*/
+
+		a:link{color: blue;}
+		a:hover{color: yellow; font-size: 22px; }/* 颜色color未访问过有效 */
+		a:active{color: red;}
+		a:visited{color: green; font-size: 20px;}
+
+
+	</style>
+</head>
+<body>
+
+	<a href="http://www.baidu.com/" target="_blank">_blank(新窗口打开)</a>
+	<br />
+	<br />
+	<a href="http://www.baidu.com/">无_blank（当前页打开）</a>
+	<br />
+	<br />
+	<a href="#">#</a>
+	<br />
+	<br />
+	<a href="javascript:void(0);">javascript:;</a>
+
+
+</body>
+</html>
