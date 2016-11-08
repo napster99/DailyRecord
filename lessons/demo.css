@@ -1,0 +1,32 @@
+/* 重置浏览器样式 */
+html,body{
+  padding: 0;
+  margin: 0;
+  height:100%;
+}
+
+.page{
+  background: #000;
+  height: 100%;
+}
+
+.header{
+  height: 50px;
+  background: #fff;
+  border-top: 2px solid #fa7d3c;
+  padding-left: 100px;
+  padding-right: 100px; 
+}
+
+
+.logo{
+  background: url(logo.png) no-repeat 0 40%;
+  background-size: 80px 27px;
+  width: 140px;
+  height: 48px;
+  display: inline-block;
+}
+
+.input-cls{
+  width: 200px;
+}

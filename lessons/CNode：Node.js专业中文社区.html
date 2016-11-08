@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://cnodejs.org/topic/create -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- meta -->
+  
+  <meta name="description" content="CNode：Node.js专业中文社区">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="nodejs, node, express, connect, socket.io">
+  <!-- see http://smerity.com/articles/2013/where_did_all_the_http_referrers_go.html -->
+  <meta name="referrer" content="always">
+
+  
+  <meta name="author" content="EDP@TaoBao">
+  
+  <meta property="wb:webmaster" content="617be6bd946c6b96">
+  
+
+  <link title="RSS" type="application/rss+xml" rel="alternate" href="https://cnodejs.org/rss">
+
+  
+  <link rel="icon" href="https://o4j806krb.qnssl.com/public/images/cnode_icon_32.png" type="image/x-icon">
+  
+
+  <!-- style -->
+  <link rel="stylesheet" href="./CNode：Node.js专业中文社区_files/index.min.b441063a.min.css" media="all">
+
+
+  <!-- scripts -->
+  <script async="" src="./CNode：Node.js专业中文社区_files/analytics.js"></script><script src="./CNode：Node.js专业中文社区_files/index.min.aeb155e1.min.js"></script>
+
+
+  
+  <title>CNode：Node.js专业中文社区</title>
+  
+  <meta content="_csrf" name="csrf-param">
+  <meta content="2pH4EdrZ-z1iC10cVbgKi1fMtaIdk-3BQS30" name="csrf-token">
+</head>
+<body>
+<!-- navbar -->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="https://cnodejs.org/">
+        
+          <img src="./CNode：Node.js专业中文社区_files/cnodejs_light.svg">
+        
+      </a>
+
+      <form id="search_form" class="navbar-search" action="https://cnodejs.org/search">
+        <input type="text" id="q" name="q" class="search-query span3" value="">
+      </form>
+      <ul class="nav pull-right">
+        <li><a href="https://cnodejs.org/">首页</a></li>
+        
+        <li>
+            <a href="https://cnodejs.org/my/messages">
+              
+                <span class="big messages_count">1</span>
+              
+              未读消息
+            </a>
+        </li>
+        
+        <li><a href="https://cnodejs.org/getstart">新手入门</a></li>
+        <li><a href="https://cnodejs.org/api">API</a></li>
+        
+        <li><a href="https://cnodejs.org/about" target="">关于</a></li>
+        
+        
+        <li><a href="https://cnodejs.org/setting">设置</a></li>
+        <li>
+          <a href="https://cnodejs.org/signout" data-method="post" rel="nofollow">退出</a>
+        </li>
+        
+      </ul>
+      <a class="btn btn-navbar" id="responsive-sidebar-trigger">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div>
+  </div>
+</div>
+<div id="main">
+  <div id="sidebar">
+  <div class="panel">
+    <div class="header">
+      <span class="col_fade">Markdown 语法参考</span>
+    </div>
+    <div class="inner">
+      <ol>
+        <li><tt>### 单行的标题</tt></li>
+        <li><tt>**粗体**</tt></li>
+        <li><tt>`console.log('行内代码')`</tt></li>
+        <li><tt>```js\n code \n```</tt> 标记代码块</li>
+        <li><tt>[内容](链接)</tt></li>
+        <li><tt>![文字说明](图片链接)</tt></li>
+      </ol>
+      <span><a href="https://segmentfault.com/markdown" target="_blank">Markdown 文档</a></span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="header">
+      <span class="col_fade">话题发布指南</span>
+    </div>
+    <div class="inner">
+      <ol>
+        <li>尽量把话题要点浓缩到标题里</li>
+        <li>代码含义和报错可在 <a href="http://segmentfault.com/t/node.js">SegmentFault</a> 提问</li>
+      </ol>
+    </div>
+  </div>
+
+</div>
+
+
+<div id="content">
+  <div class="panel">
+    <div class="header">
+      <ol class="breadcrumb">
+        <li><a href="https://cnodejs.org/">主页</a><span class="divider">/</span></li>
+        
+        <li class="active">发布话题</li>
+        
+      </ol>
+    </div>
+    <div class="inner post">
+      
+      
+      
+        <form id="create_topic_form" action="https://cnodejs.org/topic/create" method="post">
+          
+          <fieldset>
+            <span class="tab-selector">选择版块：</span>
+            <select name="tab" id="tab-value">
+              <option value="">请选择</option>
+              
+                <option value="share">分享</option>
+
+              
+                <option value="ask">问答</option>
+
+              
+                <option value="job">招聘</option>
+
+              
+            </select>
+            <span id="topic_create_warn"><strong>提问时，请遵循 <a href="https://gist.github.com/alsotang/f654af8b1fff220e63fcb44846423e6d" target="_blank">《提问的智慧》</a>中提及的要点，以便您更接收到高质量回复。</strong></span>
+            <textarea autofocus="" class="span9" id="title" name="title" rows="1" placeholder="标题字数 10 字以上"></textarea>
+
+            <div class="markdown_editor in_editor">
+              <div class="markdown_in_editor">
+                <textarea class="editor" name="t_content" rows="20" placeholder="文章支持 Markdown 语法, 请注意标记代码" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10px; left: 238.094px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 0px;"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 271.094px; margin-left: 0px; min-height: 36px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>异</span><span>步</span><span>阻</span><span>塞</span><span>j</span><span>s</span><span>执</span><span>行</span><span>，</span><span>有</span><span>什</span><span>么</span><span>好</span><span>的</span><span>方</span><span>法</span><span>吗</span><span>？</span></pre></div><div style="position: relative; z-index: 1; display: none;"></div><div class="CodeMirror-code"><pre>异步阻塞js执行，有什么好的方法吗？</pre></div><div class="CodeMirror-cursor" style="left: 238.094px; top: 6px; height: 16px;">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none;">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 36px;"></div><div class="CodeMirror-gutters" style="display: none; height: 450px;"></div></div></div><div class="editor-statusbar"><span class="lines">1</span><span class="words">15</span><span class="cursor">0:18</span></div>
+
+                <div class="editor_buttons">
+                  <input type="submit" class="span-primary submit_btn" data-loading-text="提交中" value="提交">
+                </div>
+              </div>
+
+            </div>
+
+            <input type="hidden" id="topic_tags" name="topic_tags" value="">
+            <input type="hidden" name="_csrf" value="2pH4EdrZ-z1iC10cVbgKi1fMtaIdk-3BQS30">
+          </fieldset>
+        </form>
+    </div>
+    
+  </div>
+</div>
+
+<!-- markdown editor -->
+<script src="./CNode：Node.js专业中文社区_files/editor.min.ac2680fc.min.js"></script>
+
+
+<script>
+  (function () {
+    var editor = new Editor();
+    editor.render($('.editor')[0]);
+
+    // 版块选择的检查，必须选择
+    $('#create_topic_form').on('submit', function (e) {
+      var tabValue = $('#tab-value').val();
+      if (!tabValue) {
+        alert('必须选择一个版块！');
+        $('.submit_btn').button('reset');
+        $('.tab-selector').css('color', 'red');
+        return false;
+      }
+    });
+    // END 版块选择的检查，必须选择
+
+    // 选择招聘版块时，给出提示
+    $('#tab-value').on('change', function () {
+      var $this = $(this);
+      var value = $this.val();
+      var warnMsg = '';
+      if (value === 'job') {
+        warnMsg = '<strong>为避免被管理员删帖，发帖时请好好阅读<a href="http://cnodejs.org/topic/541ed2d05e28155f24676a12" target="_blank">《招聘帖规范》</a></strong>';
+      } else if (value === 'ask') {
+        warnMsg = '<strong>提问时，请遵循 <a href="https://gist.github.com/alsotang/f654af8b1fff220e63fcb44846423e6d" target="_blank">《提问的智慧》</a>中提及的要点，以便您更接收到高质量回复。</strong>'
+      }
+      $('#topic_create_warn').html(warnMsg);
+    });
+    // END 选择招聘版块时，给出提示
+  })();
+</script>
+
+</div><div class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="editorToolImageTitle" aria-hidden="true"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="editorToolImageTitle">图片</h3></div><div class="modal-body"><div class="upload-img" style="height: 50px; padding: 60px 0px; text-align: center; border: 4px dashed rgb(221, 221, 221);"><div class="button webuploader-container" style="width: 86px; height: 40px; margin: 0px auto;"><div class="webuploader-pick">上传图片</div><div id="rt_rt_1aumrosi0qig19h3ea213uo2vc1" style="position: absolute; overflow: hidden; bottom: auto; right: auto; width: 86px; height: 40px; top: 0px; left: 0px;"><input type="file" name="file" class="webuploader-element-invisible" accept="image/*"><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label></div></div><span class="tip" style="display: none;"></span><div class="alert alert-error hide"></div></div></div></div><div class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="editorToolImageTitle" aria-hidden="true"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="editorToolImageTitle">添加连接</h3></div><div class="modal-body"><form class="form-horizontal"><div class="control-group"><label class="control-label">标题</label><div class="controls"><input type="text" name="title" placeholder="Title"></div></div><div class="control-group"><label class="control-label">连接</label><div class="controls"><input type="text" name="link" value="http://" placeholder="Link"></div></div></form></div><div class="modal-footer"><button class="btn btn-primary" role="save">确定</button></div></div>
+<div id="backtotop" style="top: 400px; right: 0px;">回到顶部</div>
+<div id="footer">
+  <div id="footer_main">
+    <div class="links">
+      <a class="dark" href="https://cnodejs.org/rss">RSS</a>
+      |
+      <a class="dark" href="https://github.com/cnodejs/nodeclub/">源码地址</a>
+    </div>
+
+    <div class="col_fade">
+
+  <p>CNode 社区为国内最专业的 Node.js 开源技术社区，致力于 Node.js 的技术研究。</p>
+  <p>服务器赞助商为
+    <a href="http://www.ucloud.cn/?utm_source=zanzhu&amp;utm_campaign=cnodejs&amp;utm_medium=display&amp;utm_content=yejiao&amp;ytag=cnodejs_logo" target="_blank" class="sponsor_outlink" data-label="ucloud_bottom">
+      <img src="./CNode：Node.js专业中文社区_files/FuIpEaM9bvsZKnQ3QfPtBHWQmLM9" title="ucloud" alt="ucloud" width="92px">
+    </a>
+  ，存储赞助商为
+    <a href="http://www.qiniu.com/?ref=cnode" target="_blank" class="sponsor_outlink" data-label="qiniu_bottom">
+      <img src="./CNode：Node.js专业中文社区_files/Fg0jtDIcTqVC049oVu5-sn6Om4NX" title="七牛云存储" alt="七牛云存储" width="115px">
+    </a>
+  ，由<a href="https://alinode.aliyun.com/?ref=cnode" target="_blank" class="sponsor_outlink" data-label="alinode_bottom">
+      <img src="./CNode：Node.js专业中文社区_files/FpMZk31PDyxkC8yStmMQL4XroaGD" title="alinode" alt="alinode" height="54px" width="166px">
+    </a>提供应用性能服务。
+  </p>
+  <p>新手搭建 Node.js 服务器，推荐使用无需备案的 <a href="https://www.digitalocean.com/?refcode=eba02656eeb3">DigitalOcean(https://www.digitalocean.com/)</a></p>
+</div>
+
+
+  </div>
+</div>
+<div id="sidebar-mask"></div>
+
+
+<script>
+  // google analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script', "https://www.google-analytics.com/analytics.js",'ga');
+
+  ga('create', 'UA-41753901-5', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+<div style="display:none;">
+  <script src="./CNode：Node.js专业中文社区_files/z_stat.php" language="JavaScript"></script><script src="./CNode：Node.js专业中文社区_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1254020586" target="_blank" title="站长统计">站长统计</a>
+</div>
+
+
+
+
+</body></html>

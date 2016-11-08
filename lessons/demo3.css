@@ -1,0 +1,106 @@
+html,body{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: #f4f6f8;
+}
+
+ul, li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: #16a085;
+  text-decoration: none;
+  font-size: 16px; 
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+h3{
+  margin: 0;
+  padding-top: 10px;
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 5px; 
+}
+.wrap{
+  width: 610px;
+  background: #fff;
+  height: 1000px;
+  margin-left: 140px;
+  padding-left: 20px;
+  padding-right: 20px; 
+  box-shadow: 0px 10px 10px #ccc;
+}
+
+.item{
+  padding: 6px 0;
+  border-bottom: 1px dashed #e3e3e3;
+}
+
+.item:first-letter{
+  color: #000;
+  font-size: 14px;
+}
+
+img{
+  width:100%;
+}
+
+.picture{
+  float: left;
+  width: 150px;
+  height: 145px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background: #f7f7f7;
+  padding: 10px 15px 30px 15px;
+
+  border: 1px solid #e3e3e3;
+}
+
+.picture a, .picture span{
+  color: #000;
+  font-size: 12px; 
+  margin-top: 5px;
+}
+
+.picture a:hover{
+  color: #16a085;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.picture span{
+  float: right;
+  color: #999;
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+
+.apple{
+  position: relative;
+  /*background: red;*/
+
+}
+
+.apple div{
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
