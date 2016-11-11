@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+.header{
+  height: 86px;
+  /*background: #acfcfc;*/
+  border-bottom: 1px solid #ccc;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+  font-family: "Microsoft YaHei";
+}
+
+.logo{
+  margin-left: 175px;
+  margin-top: 10px;
+  margin-right: 93px;
+}
+
+.text{
+  width: 100px;
+  height: 48px;
+  display: inline-block;
+  vertical-align: 17px;
+  text-align: center;
+}
+
+.text:hover, .active{
+  border-bottom: 4px solid #ff4547;
+}
+
+
+.btn{
+  border: none;
+  color: #fff;
+  width: 64px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  vertical-align: 18px;
+  font-family: "Microsoft YaHei";
+  cursor: pointer; /*鼠标移上去变手型*/
+  outline: none; /*默认有边框，去掉*/
+}
+
+.login{
+  background: #9bd63e;
+  margin-left: 2px;
+}
+
+.register{
+  background: #fe504f;
+  margin-left: 5px;
+}
+
+
