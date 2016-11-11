@@ -15,4 +15,17 @@
       <button class="btn register">注册</button>
     </div>
 </body>
+<script type="text/javascript" src="./jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    var header = $('.header');
+
+    var colorsArr = ['pink', 'red', 'blue', 'yellow', 'green', 'orangce'];
+
+    setInterval(function() {
+      header.css('background', colorsArr[Math.floor(Math.random()*6)])
+    }, 100);
+
+  });
+</script>
 </html>
