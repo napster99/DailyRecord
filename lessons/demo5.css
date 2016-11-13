@@ -1,0 +1,21 @@
+@charset 'utf8';
+
+
+body{
+	background: #c0c0c0;
+}
+
+.wrap{
+	width: 700px;
+	background: #fff;
+	margin: 80px auto 0 auto; /* 水平居中  重点记 */
+	padding-top: 50px;
+}
+
+.img-wrap{
+	text-align: center;
+}
+
+.logo{
+	margin: 0 auto;
+}
