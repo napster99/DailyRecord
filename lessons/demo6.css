@@ -14,6 +14,11 @@ a{
 	float: right;
 }
 
+.fl{
+	float: left;
+}
+
+
 a:hover{
 	color: #73adc9;
 }
@@ -152,7 +157,7 @@ a:hover{
 .nav ul li{
 	float: left;
 	/*width: 100px;*/
-	padding: 0 30px;
+	padding: 0 25px;
 	text-align: center;
 }
 
@@ -176,4 +181,52 @@ a:hover{
 	background: #ff318c;
 	text-align: left;
 	padding-left: 20px;
+}
+
+.left-con{
+	width: 225px;
+}
+
+.left-con ul li{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #dfdfdf;
+	border-left: 1px solid #dfdfdf;
+	padding: 0 20px;
+}
+
+.left-con ul li span{
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+}
+
+.left-con ul li span:hover{
+	cursor: pointer;
+	color: #ff4883;
+}
+
+.left-con ul li a{
+	float: right;
+	color: #949494;
+	margin-left: 15px;
+}
+
+.left-con ul li a:hover{
+	color: #005aa0;
+	text-decoration: underline;
+}
+
+.middle-con{
+	width: 735px;
+}
+
+.right-con {
+	width: 265px;
+	margin-left: 1px;
+}
+
+.middle-con img, .right-con img{
+	width: 100%;
+	height: 260px;
 }
