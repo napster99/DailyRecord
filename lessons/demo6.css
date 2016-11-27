@@ -222,11 +222,56 @@ a:hover{
 }
 
 .right-con {
-	width: 265px;
+	width: 248px;
 	margin-left: 1px;
 }
 
 .middle-con img, .right-con img{
 	width: 100%;
 	height: 260px;
+}
+
+.middle-unit {
+	height: 97px;
+	width: 204px;
+	border: 1px solid #dfdfdf;
+	border-left: none;
+	padding: 28px 10px 30px 30px;
+}
+
+.middle-unit:last-child{
+	border-right: none;
+}
+
+.middle-unit .title{
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+}
+
+.middle-unit .mid-list{
+	margin-top: 20px;
+}
+.middle-unit .mid-list li {
+	margin: 5px 8px;
+}
+.middle-unit .mid-list li a{
+	font-family: 'Microsoft Yahei';
+	color: #7b7b7b;
+
+}
+
+.middle-unit .mid-list li a:hover, .middle-unit .mid-list li a.hot:hover{
+	text-decoration: underline;
+	color: #0b5c9e;
+}
+.middle-unit .mid-list li a.hot{
+	color: #ff4883;
+}
+
+.right-con .download{
+	width: 245px;
+	height: 155px;
+	border:1px solid #dfdfdf;
 }
