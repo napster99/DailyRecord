@@ -18,6 +18,10 @@ a{
 	float: left;
 }
 
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
 
 a:hover{
 	color: #73adc9;
@@ -236,7 +240,7 @@ a:hover{
 	width: 204px;
 	border: 1px solid #dfdfdf;
 	border-left: none;
-	padding: 28px 10px 30px 30px;
+	padding: 28px 10px 19px 30px;
 }
 
 .middle-unit:last-child{
@@ -272,6 +276,60 @@ a:hover{
 
 .right-con .download{
 	width: 245px;
-	height: 155px;
+	height: 144px;
 	border:1px solid #dfdfdf;
+}
+
+.pic-con{
+	margin-top: 20px;
+}
+
+.pic-con-title{
+	margin-bottom: 10px;
+}
+
+.pic-con-title h3{
+	display: inline-block;
+	font-size: 20px;
+	color: #000;
+}
+
+.pic-con-title .desc{
+	font-size: 16px;
+	color: #999;
+}
+
+.pic-left-con{
+	width: 960px;
+}
+
+.pic-left-main-con{
+	border: 1px solid #dfdfdf;
+	border-right: none;
+}
+
+.pic-left-main-con ul{
+	margin-left: 1px solid #fff;
+}
+
+.pic-left-main-con ul li{
+	border-right: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.pic-left-main-con ul li img{
+	width: 145px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.pic-right-con{
+	margin-left: 980px;
+
+}
+
+.pic-right-con h2{
+	font-size: 20px;
+	color: #444;
+	font-weight: bold;
 }
