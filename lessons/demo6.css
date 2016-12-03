@@ -243,7 +243,7 @@ a:hover{
 	padding: 28px 10px 19px 30px;
 }
 
-.middle-unit:last-child{
+.middle-:last-child{
 	border-right: none;
 }
 
@@ -333,3 +333,116 @@ a:hover{
 	color: #444;
 	font-weight: bold;
 }
+
+
+.unit{
+	position: relative;
+	height: 135px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.unit .bg-cls{
+	position: absolute;
+	top: 10px;
+	left: 100px;
+
+}
+.unit  h3{ 
+	font-size: 16px;
+	font-weight: 700;
+	color: #000;
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+.unit:hover h3{
+	color: #ff4883;
+}
+
+.unit  p{
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+/*中间展示区域*/
+.list-con{
+	margin-top: 40px;
+}
+
+.list-con-title a:hover, .itemlist-appertain:hover{
+	color: #005aa0;
+	text-decoration:underline;
+}
+
+.itemlist{
+	margin-top: 10px;
+}
+
+.itemlist li {
+	width: 224px;
+	padding: 4px;
+	/*box-sizing:content-box;*/
+	margin-left: 7px;
+	border: 1px solid transparent;
+}
+
+.itemlist li:hover{
+	border: 1px solid #ff4883;
+}
+
+.itemlist li a:hover .borderbox p{
+	display: block;
+}
+
+.itemlist li a:hover h4{ 
+	color: #ff4883;
+}
+
+.imgbox{
+
+}
+
+.borderbox{
+	width: 224px;
+	height: 135px;
+	border: 1px solid #dfdfdf;
+	overflow: hidden;
+	position: relative;
+}
+
+.borderbox p{
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	/*width: 100%;*/
+	right: 0;
+	padding-left: 15px;
+	color: #fff;
+	background: rgba(0,0,0, 0.6);
+	display: none;
+}
+
+.borderbox img{
+	width: 100%;
+}
+
+h4.itemlist-title{
+	color: #444;
+	font-size: 16px;
+	max-width: 186px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-top: 15px;
+	font-weight: bold;
+}
+
+.itemlist-appertain{
+	margin-top: 10px;
+	display: inline-block;
+	color:#666;
+
+}
+
